@@ -1,0 +1,157 @@
+body {
+	background-color: pink;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+/*  FORM  */
+#msform {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+
+#msform fieldset {
+	background-color: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	width: 80%;
+	position: absolute;
+	margin: 0 10%;
+	box-sizing: border-box;
+}
+
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+
+/*  INPUTS  */
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	color: #2C3E50;
+	font-size: 13px;
+	box-sizing: border-box;
+}
+
+/*  BUTTONS  */
+#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+/*  HEADINGS  */
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+
+/*  PROGRESS BAR  */
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	counter-reset: step;
+}
+
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background-color: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+
+/*  PROGRESS BAR CONNECTORS  */
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	left: -50px;
+	top: 9px;
+	z-index: -1;
+}
+
+#progressbar li:first-child:after {
+	content: none;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+	background-color: #27AE60;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
