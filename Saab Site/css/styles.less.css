@@ -83,6 +83,7 @@ h2 {
     transform: translate(-50%, -50%)
  }
 
+/*
 .social-media { 
 	position:absolute; 
 	left:50%; 
@@ -93,7 +94,15 @@ h2 {
 	vertical-align:middle; 
 	align-items: baseline;
 }
+*/
 
+.social-media { 
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
 
 
 
