@@ -31,6 +31,62 @@
                 }
             });
             React.renderComponent(<App />, document.body);
+
+            var DropdownItem = React.createClass({
+                render: function() {
+                    return (
+                        <li className="dropdown-item">{this.props.name}</li>
+                    );
+                }
+            });
+
+            var DropdownItems = React.createClass({
+                getDefaultProps: function() {
+                    return {
+                        items: [&#39;New tab&#39;, &#39;New incognito tab&#39;, &#39;Bookmarks&#39;, &#39;Recent tabs&#39;, &#39;History&#39;, &#39;Print&#39;, &#39;Settings&#39;, &#39;Help &amp; feedback&#39;]
+                    }
+                },
+
+                render: function() {
+                    var items = this.props.items.map(function(item, i) {
+                        return (<DropdownItem name={item} key={i} />);
+                    }.bind(this))
+                    return (
+                        <ul className="dropdown-items">
+                            {items}
+                        </ul>
+                    );
+                }
+            });
         </script
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
