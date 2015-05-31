@@ -5,3 +5,5 @@ function LetterChange(str) {
         return c.toUpperCase();
     });
 }
+
+LetterChange('d');
