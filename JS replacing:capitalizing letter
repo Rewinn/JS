@@ -1,0 +1,7 @@
+function LetterChange(str) {
+    return str.replace(/[a-z]/ig, function (c) {
+        return c.toUpperCase() === 'Z' ? 'A' : String.fromCharCode(c.charCodeAt(0) + 1);
+    }).replace(/[aeiou]/g, function(c) {
+        return c.toUpperCase();
+    });
+}
