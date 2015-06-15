@@ -19,7 +19,7 @@
 	<p>{{main.searchInput}}</p>
 	<h3>A List of TV Show</h3>
 	<ul class="list-group">
-		<li class="list-group-item" ng-repeat="show in main.shows">{{show.title}}</li>
+		<li class="list-group-item" ng-repeat="show in main.shows"><span class="glyphicon glyphicon-star" ng-if="show.favorite"></span>{{show.title}}</li>
 	</ul>
 </body>
 </html>
