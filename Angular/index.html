@@ -10,6 +10,12 @@
 </head>
 <body ng-app="app" ng-controller="MainController as main">
 	<h1>{{main.title}}</h1>
-
+	<div class="input-group">
+		<span class="input-group-addon">
+			<span class="glyphicon glyphicon-search"></span>
+		</span>
+		<input type="text" class="form-control" ng-model="main.searchInput">
+	</div>
+	<p>{{main.searchInput}}</p>
 </body>
 </html>
